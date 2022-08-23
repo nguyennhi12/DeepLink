@@ -9,10 +9,8 @@ const Detail = () => {
   return (
     <View style={{alignItems: 'center', justifyContent: 'center', flex: 1}}>
       <TouchableOpacity
-        onPress={() =>
-          navigation.canGoBack() && navigation.navigate('LinkingScreen')
-        }
-        onLongPress={() => navigation.goBack()}
+        onPress={() => navigation.navigate('LinkingScreen')}
+        onLongPress={() => navigation.canGoBack() && navigation.goBack()}
         style={{
           backgroundColor: 'green',
           width: 200,
